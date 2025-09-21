@@ -1,0 +1,33 @@
+{
+    "name": "selimppc/laravel-modules",
+    "description": "Lightweight, convention-based modules for Laravel 11/12. Zero request-time overhead. Keeps app migrations by default.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "modules", "modular", "ddd", "package", "lightweight", "convention"],
+    "homepage": "https://github.com/selimppc/laravel-modules",
+    "support": {
+      "issues": "https://github.com/selimppc/laravel-modules/issues",
+      "source": "https://github.com/selimppc/laravel-modules"
+    },
+    "require": {
+      "php": "^8.3",
+      "illuminate/support": "^11.0 || ^12.0",
+      "illuminate/routing": "^11.0 || ^12.0",
+      "illuminate/console": "^11.0 || ^12.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "Selimppc\\LaravelModules\\": "src/"
+      }
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Selimppc\\LaravelModules\\ModulesServiceProvider"
+        ]
+      }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
+  
